@@ -1,0 +1,7 @@
+version: 2
+
+models:
+  - name: stg_jaffle_shop_customers
+  #to model customers as table because the default is view
+    config:
+      materialized: table
