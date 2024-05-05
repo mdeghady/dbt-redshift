@@ -18,4 +18,4 @@ select
         else false
     end as is_completed_payment,
     created as created_date
-from dev.stripe.payment
+from {{  source('stripe' , 'payment')  }}
